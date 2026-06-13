@@ -1,0 +1,333 @@
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Segoe UI',sans-serif;
+background:#111;
+color:#fff;
+line-height:1.6;
+}
+
+a{
+text-decoration:none;
+}
+
+ul{
+list-style:none;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+/* =========================
+NAVBAR
+========================= */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:1000;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(0,0,0,0.85);
+backdrop-filter:blur(10px);
+}
+
+.logo{
+font-size:1.8rem;
+font-weight:700;
+color:#ff5a1f;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+}
+
+nav ul li a{
+color:white;
+transition:.3s;
+}
+
+nav ul li a:hover
+
+/* =========================
+HERO SECTION
+========================= */
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+
+background:
+linear-gradient(
+rgba(0,0,0,.65),
+rgba(0,0,0,.65)
+),
+url("https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1800&q=80");
+
+background-size:cover;
+background-position:center;
+
+
+}
+
+.hero-content{
+max-width:800px;
+padding:50px;
+}
+
+.hero-content h1{
+font-size:5rem;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:1.3rem;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#ff5a1f;
+color:white;
+border-radius:6px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+/* =========================
+GENERAL SECTIONS
+========================= */
+
+.section{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:100px 20px;
+}
+
+.section h2{
+font-size:3rem;
+margin-bottom:25px;
+}
+
+.section p{
+max-width:800px;
+margin:auto;
+font-size:1.1rem;
+}
+
+/* =========================
+PARALLAX IMAGES
+========================= */
+
+.parallax{
+height:100vh;
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+}
+
+.image1{
+background-image:url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1800&q=80");
+}
+
+.image2{
+background-image:url("https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1800&q=80");
+}
+
+.image3{
+background-image:url("https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=1800&q=80");
+}
+
+/* =========================
+PROGRAM CARDS
+========================= */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.card{
+background:#1b1b1b;
+padding:40px 25px;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+color:#ff5a1f;
+margin-bottom:15px;
+}
+
+/* =========================
+MEMBERSHIP PLANS
+========================= */
+
+.pricing-cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.plan{
+background:#1b1b1b;
+padding:40px;
+border-radius:15px;
+transition:.3s;
+}
+
+.plan:hover{
+transform:scale(1.05);
+}
+
+.plan h1{
+color:#ff5a1f;
+margin:20px 0;
+font-size:3rem;
+}
+
+/* =========================
+TRAINERS
+========================= */
+
+.trainer-cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.trainer{
+background:#1b1b1b;
+padding:40px;
+border-radius:15px;
+}
+
+.trainer h3{
+color:#ff5a1f;
+margin-bottom:10px;
+}
+
+/* =========================
+CONTACT FORM
+========================= */
+
+form{
+margin-top:40px;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+input,
+textarea{
+width:100%;
+padding:15px;
+border:none;
+border-radius:8px;
+background:#222;
+color:white;
+}
+
+textarea{
+resize:none;
+height:180px;
+}
+
+button{
+padding:15px;
+background:#ff5a1f;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:1rem;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+background:#000;
+text-align:center;
+padding:50px 20px;
+}
+
+.footer-content h3{
+color:#ff5a1f;
+margin-bottom:15px;
+}
+
+.footer-content p{
+margin-bottom:10px;
+}
+
+/* =========================
+RESPONSIVE DESIGN
+========================= */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero-content h1{
+    font-size:3rem;
+}
+
+.section h2{
+    font-size:2.2rem;
+}
+
+.parallax{
+    background-attachment:scroll;
+}
+
+}
