@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-
+    <title>Iron Edge Fitness</title>
 </head>
-
 
 <body>
 
-
 <!-- HEADER / NAVBAR -->
-
 <header>
     <nav>
-        <div class="logo">
-            IRON EDGE FITNESS
-        </div>
+        <div class="logo">IRON EDGE FITNESS</div>
 
-        <ul>
-            <li><a href="#">Home</a></li>
+        <button class="hamburger" id="menu-toggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul id="nav-links">
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#programs">Programs</a></li>
             <li><a href="#pricing">Pricing</a></li>
@@ -31,209 +31,141 @@
     </nav>
 </header>
 
-
 <!-- HERO SECTION -->
-
 <section id="home" class="hero">
-
     <div class="hero-content">
-
         <h1>TRANSFORM YOUR BODY</h1>
-
-        <p>
-            Train harder. Get stronger.
-            Become the best version of yourself.
-        </p>
-
-        <a href="#" class="btn">
-            Join Now
-        </a>
-
+        <p>Train harder. Get stronger. Become the best version of yourself.</p>
+        <a href="#programs" class="btn">Join Now</a>
     </div>
-
 </section>
 
-
 <!-- ABOUT SECTION -->
-
 <section id="about" class="section">
-
     <div class="container">
-
         <h2>About Us</h2>
-
         <p>
             We help people build strength, confidence,
             discipline and healthier lifestyles through
             professional coaching and world-class equipment.
         </p>
-
     </div>
-
 </section>
 
-
 <!-- PARALLAX IMAGE -->
-
 <div class="parallax image1"></div>
 
-
 <!-- PROGRAMS SECTION -->
-
 <section id="programs" class="section">
-
     <div class="container">
-
         <h2>Our Programs</h2>
-
         <div class="cards">
-
             <div class="card">
                 <h3>Weight Loss</h3>
-                <p>Customized plans to burn fat.</p>
+                <p>Customized plans to burn fat and keep it off with sustainable habits.</p>
             </div>
-
             <div class="card">
                 <h3>Muscle Building</h3>
-                <p>Build strength and size effectively.</p>
+                <p>Build strength and size effectively with science-backed programming.</p>
             </div>
-
             <div class="card">
                 <h3>Personal Training</h3>
-                <p>One-on-one coaching sessions.</p>
+                <p>One-on-one coaching sessions tailored to your goals and schedule.</p>
             </div>
-
         </div>
-
     </div>
-
 </section>
 
-
 <!-- PARALLAX IMAGE -->
-
 <div class="parallax image2"></div>
 
-
 <!-- MEMBERSHIP SECTION -->
-
 <section id="pricing" class="section">
-
     <div class="container">
-
         <h2>Membership Plans</h2>
-
         <div class="pricing-cards">
-
             <div class="plan">
                 <h3>Basic</h3>
-                <h1>$19</h1>
-                <p>Monthly Access</p>
+                <h1>$19<span style="font-size:1rem;color:#aaa">/mo</span></h1>
+                <p>Gym access, locker rooms, free weights</p>
             </div>
-
             <div class="plan">
                 <h3>Premium</h3>
-                <h1>$39</h1>
-                <p>Classes Included</p>
+                <h1>$39<span style="font-size:1rem;color:#aaa">/mo</span></h1>
+                <p>Everything in Basic + group classes</p>
             </div>
-
             <div class="plan">
                 <h3>Elite</h3>
-                <h1>$69</h1>
-                <p>Everything Included</p>
+                <h1>$69<span style="font-size:1rem;color:#aaa">/mo</span></h1>
+                <p>Everything included + personal trainer</p>
             </div>
-
         </div>
-
     </div>
-
 </section>
-
 
 <!-- PARALLAX IMAGE -->
-
 <div class="parallax image3"></div>
 
-
 <!-- TRAINERS -->
-
 <section id="trainers" class="section">
-
     <div class="container">
-
         <h2>Meet Our Trainers</h2>
-
         <div class="trainer-cards">
-
             <div class="trainer">
                 <h3>Alex Carter</h3>
-                <p>Strength Coach</p>
+                <p>Strength &amp; Conditioning Coach — 8 years experience</p>
             </div>
-
             <div class="trainer">
                 <h3>Sarah Reed</h3>
-                <p>Fitness Coach</p>
+                <p>Fitness &amp; Cardio Coach — Specialises in HIIT training</p>
             </div>
-
             <div class="trainer">
                 <h3>Michael Brown</h3>
-                <p>Nutrition Specialist</p>
+                <p>Nutrition Specialist — Certified dietician &amp; trainer</p>
             </div>
-
         </div>
-
     </div>
-
 </section>
-
 
 <!-- CONTACT -->
-
 <section id="contact" class="section">
-
     <div class="container">
-
         <h2>Contact Us</h2>
-
         <form>
-
-            <input type="text" placeholder="Full Name">
-
-            <input type="email" placeholder="Email Address">
-
-            <textarea placeholder="Your Message"></textarea>
-
-            <button type="submit">
-                Send Message
-            </button>
-
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
         </form>
-
     </div>
-
 </section>
 
-
 <!-- FOOTER -->
-
 <footer>
-
     <div class="footer-content">
-
         <h3>IRON EDGE FITNESS</h3>
-
-        <p>
-            Helping people become stronger every day.
-        </p>
-
-        <p>
-            © 2026 Iron Edge Fitness.
-            All Rights Reserved.
-        </p>
-
+        <p>Helping people become stronger every day.</p>
+        <p>© 2026 Iron Edge Fitness. All Rights Reserved.</p>
     </div>
-
 </footer>
-```
+
+<script>
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        toggle.classList.toggle('open');
+    });
+
+    // Close menu when a link is tapped (mobile UX)
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+            toggle.classList.remove('open');
+        });
+    });
+</script>
 
 </body>
+</html>
